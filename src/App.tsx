@@ -1,10 +1,11 @@
-import Header from "./components/Header/Header";
+import { Routes, Route } from "react-router-dom";
+import LandingPage from "./Pages/LandingPage";
 
 function App() {
   return (
-    <div>
-      <Header />
-    </div>
+    <Routes>
+      <Route path="/" element={<LandingPage/>}/>
+    </Routes>
   );
 }
 
