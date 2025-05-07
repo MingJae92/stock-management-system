@@ -1,16 +1,25 @@
-import { Box, Typography, Button } from "@mui/material";
+import React from 'react';
+import { Box, Typography, Button } from '@mui/material';
 
 const CallToAction = () => (
-  <Box sx={{ bgcolor: "#1a237e", color: "#fff", py: 6, textAlign: "center" }}>
-    <Typography variant="h4" gutterBottom>
-      Ready to Optimize Your Inventory?
-    </Typography>
-    <Button
-      variant="contained"
-      sx={{ mt: 2, backgroundColor: "#fbc02d", color: "#000" }}
-    >
-      Sign Up Now
-    </Button>
+  <Box
+    sx={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      minHeight: '100vh',
+      padding: '0 20px',
+      backgroundColor: '#f4f4f4', // Optional: Add background color to differentiate
+    }}
+  >
+    <Box sx={{ textAlign: 'center' }}>
+      <Typography variant="h4" sx={{ marginBottom: '20px' }}>
+        Ready to Get Started?
+      </Typography>
+      <Button variant="contained" color="primary">
+        Join Now
+      </Button>
+    </Box>
   </Box>
 );
 

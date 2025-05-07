@@ -1,19 +1,24 @@
 import React from 'react';
-import { Box, Container, Typography, Button } from '@mui/material';
+import { Box, Typography, Button } from '@mui/material';
 
 const Hero = () => (
-  <Box sx={{ bgcolor: '#e3f2fd', py: 10, textAlign: 'center' }}>
-    <Container>
-      <Typography variant="h3" gutterBottom>
-        Streamline Your Inventory Management
+  <Box
+    sx={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      minHeight: '100vh', // Ensures full viewport height
+      padding: '0 20px', // Adds optional padding
+    }}
+  >
+    <Box sx={{ textAlign: 'center' }}>
+      <Typography variant="h2" sx={{ marginBottom: '20px' }}>
+        Welcome to InventoryPro
       </Typography>
-      <Typography variant="h6" color="text.secondary" paragraph>
-        Efficiently track, manage, and optimize your inventory with our intuitive platform.
-      </Typography>
-      <Button variant="contained" size="large" sx={{ mt: 3 }}>
+      <Button variant="contained" color="primary">
         Get Started
       </Button>
-    </Container>
+    </Box>
   </Box>
 );
 

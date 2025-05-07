@@ -1,10 +1,25 @@
-import { Box, Typography } from "@mui/material";
+import React from 'react';
+import { Box, Typography, Link } from '@mui/material';
 
 const Footer = () => (
-  <Box sx={{ bgcolor: "#0d47a1", color: "#fff", py: 3, textAlign: "center" }}>
-    <Typography variant="body2">
-      &copy; {new Date().getFullYear()} InventoryPro. All rights reserved.
-    </Typography>
+  <Box
+    sx={{
+      backgroundColor: '#1a237e',
+      color: 'white',
+      padding: '20px 0',
+      textAlign: 'center',
+      width: '100%',
+    }}
+  >
+    <Typography variant="body1">© 2025 InventoryPro</Typography>
+    <Box>
+      <Link href="#" sx={{ color: 'white', marginRight: '15px' }}>
+        Privacy Policy
+      </Link>
+      <Link href="#" sx={{ color: 'white' }}>
+        Terms of Service
+      </Link>
+    </Box>
   </Box>
 );
 

@@ -1,41 +1,31 @@
-import { Container, Typography, Grid } from '@mui/material';
-import Inventory2OutlinedIcon from '@mui/icons-material/Inventory2Outlined';
-import AssessmentOutlinedIcon from '@mui/icons-material/AssessmentOutlined';
-import NotificationsActiveOutlinedIcon from '@mui/icons-material/NotificationsActiveOutlined';
-import FeatureCard from "../FeatureCard/FeatureCard"
-
-const features = [
-  {
-    icon: Inventory2OutlinedIcon,
-    title: 'Real-Time Tracking',
-    description:
-      'Monitor your inventory levels in real-time to prevent stockouts and overstocking.',
-  },
-  {
-    icon: AssessmentOutlinedIcon,
-    title: 'Detailed Analytics',
-    description: 'Gain insights into inventory trends and make informed decisions.',
-  },
-  {
-    icon: NotificationsActiveOutlinedIcon,
-    title: 'Smart Alerts',
-    description: 'Receive notifications for low stock levels and other critical updates.',
-  },
-];
+import React from 'react';
+import { Box, Typography, Grid } from '@mui/material';
 
 const Features = () => (
-  <Container sx={{ py: 8 }}>
-    <Typography variant="h4" textAlign="center" gutterBottom>
-      Features
-    </Typography>
+  <Box
+    sx={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      minHeight: '100vh',
+      padding: '0 20px',
+    }}
+  >
     <Grid container spacing={4} justifyContent="center">
-      {/* {features.map((feature, index) => (
-        <Grid item xs={12} sm={6} md={4} key={index}>
-          <FeatureCard {...feature} />
-        </Grid>
-      ))} */}
+      <Grid item xs={12} sm={6} md={4}>
+        <Typography variant="h5">Feature 1</Typography>
+        <Typography variant="body1">Description of Feature 1</Typography>
+      </Grid>
+      <Grid item xs={12} sm={6} md={4}>
+        <Typography variant="h5">Feature 2</Typography>
+        <Typography variant="body1">Description of Feature 2</Typography>
+      </Grid>
+      <Grid item xs={12} sm={6} md={4}>
+        <Typography variant="h5">Feature 3</Typography>
+        <Typography variant="body1">Description of Feature 3</Typography>
+      </Grid>
     </Grid>
-  </Container>
+  </Box>
 );
 
 export default Features;
